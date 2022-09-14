@@ -17,6 +17,8 @@ Then while running the container:
 
  docker run --name demo-service -d -p 8080:8081 -v C:\Users\skarv\IdeaProjects\config:/etc/config -e "eureka.client.service-url.defaultZone=http://172.17.0.2:8761/eureka" <image_id>
  
+ docker run --name gateway -d -p 8083:8084 -e "eureka.client.service-url.defaultZone=http://172.17.0.2:8761/eureka" <image_id>
+ 
  
  ![image](https://user-images.githubusercontent.com/73943222/190118564-ae1e2c0b-7bd7-462c-873f-5c9488ebb210.png)
 
