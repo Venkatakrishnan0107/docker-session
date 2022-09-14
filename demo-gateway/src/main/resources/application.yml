@@ -1,0 +1,15 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: demoid
+          uri: lb://DEMO-SERVICE
+          predicates:
+            - Path=/demo/**
+eureka:
+  instance:
+    prefer-ip-address: true
