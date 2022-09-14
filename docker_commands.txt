@@ -1,0 +1,18 @@
+docker push 
+docker pull
+docker images -- get the images
+docker rmi <imageId>
+docker build -t <imagenane>:<imageversion> .
+docker ps --> checking container
+docker ps -a --> checking all container
+docker stop <container_id>
+docker start <container_id>
+docker rm <container_id --> remove the container
+-d  --> detached mode
+-p -->port forwarding
+--name --> name to container
+docker run --> run the image
+docker logs
+-v <path of my local directory>:<path of the directory inside container/image>
+
+ -e "eureka.client.service-url.defaultZone=http://172.17.0.2:8761/eureka"
